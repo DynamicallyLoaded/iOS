@@ -1,4 +1,4 @@
-OpenSource
-==========
+Open Source for iOS
+===================
 
-Open source code including our ObjC categories
+This repository contains Dynamically Loaded open source for iOS including our most useful ObjC categories.
