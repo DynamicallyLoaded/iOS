@@ -9,7 +9,7 @@
 
 @implementation MKMapView (DLMoveAnnotation)
 
--(void)moveAnnotation:(id<MKAnnotation>)annotation toCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated{
+-(void)dl_moveAnnotation:(id<MKAnnotation>)annotation toCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated{
     MKAnnotationView* annotationView = [self viewForAnnotation:annotation];
     //only need to move it if it is on the map.
     if(annotationView){
@@ -32,8 +32,6 @@
     }else{
         //the view is not on the map so just set its coordinate for use next time it appears.
         annotation.coordinate = coordinate;
-        //refreshing the annotation may not be required in the case of when it is not on the map but just in case:
-        annotationView.annotation = annotation;
     }
 }
 

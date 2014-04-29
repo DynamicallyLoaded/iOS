@@ -10,6 +10,6 @@
 @interface MKMapView (DLMoveAnnotation)
 
 //if you want to animate do not set the coordinate on the annotation before calling this method.
--(void)moveAnnotation:(id<MKAnnotation>)annotation toCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated;
+-(void)dl_moveAnnotation:(id<MKAnnotation>)annotation toCoordinate:(CLLocationCoordinate2D)coordinate animated:(BOOL)animated;
 
 @end
